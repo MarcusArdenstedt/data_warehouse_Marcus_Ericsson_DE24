@@ -8,3 +8,6 @@ secrets.toml
 # ignore duckdb
 *.duckdb
 *.wal
+
+
+setup_user_role.sql
