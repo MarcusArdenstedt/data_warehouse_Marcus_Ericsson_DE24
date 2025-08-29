@@ -8,7 +8,7 @@ import os
 @dlt.resource(write_disposition="replace")    # config loading proccessing, olika metoder: append, merge, replace
 def load_csv_resource(file_path: str, **kwargs):
     df = pd.read_csv(file_path, **kwargs)
-    yield df
+    yield df # blir en generator datatyp.
 
 
 if __name__ == "__main__":

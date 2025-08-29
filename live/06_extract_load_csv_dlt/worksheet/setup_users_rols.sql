@@ -1,5 +1,5 @@
 
--- switch to an appropiate role to create user and role
+-- switch to an appropriate role to create user and role
 USE ROLE USERADMIN;
 
 -- create dlt user
