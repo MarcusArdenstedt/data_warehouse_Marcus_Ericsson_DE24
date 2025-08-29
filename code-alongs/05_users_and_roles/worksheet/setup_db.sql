@@ -1,5 +1,5 @@
 
-USE role sysadmin;
+USE ROLE sysadmin;
 
 CREATE DATABASE ice_cream_db;
 
@@ -8,8 +8,8 @@ WITH
 WAREHOUSE_SIZE = 'XSMALL'
 AUTO_SUSPEND = 60
 AUTO_RESUME = TRUE
-INITIALLY_SUSPENDED = TRUE 
-COMMENT = 'Warehouse for development and analysis of databases';
+INITIALLY_SUSPENDED = TRUE
+COMMENT = 'Warehouse for development an analysis of databases';
 
 USE WAREHOUSE dev_wh;
 
@@ -37,3 +37,5 @@ CREATE TABLE transactions (
     FOREIGN KEY (customer_id) REFERENCES customers (customer_id),
     FOREIGN KEY (flavor_id) REFERENCES flavors (flavor_id)
 );
+
+

@@ -1,12 +1,6 @@
 USE ROLE ice_cream_writer;
-
 USE WAREHOUSE dev_wh;
-
 USE SCHEMA ice_cream_db.public;
-
-USE ROLE ice_cream_writer;
-
-SELECT current_role();
 
 CREATE TABLE flavors (
     flavor_id INT AUTOINCREMENT,
@@ -33,9 +27,6 @@ CREATE TABLE transactions (
     FOREIGN KEY (flavor_id) REFERENCES flavors (flavor_id)
 );
 
-
-
-
 -- Step 5: Insert sample data
 INSERT INTO flavors (flavor_name, price) VALUES
 ('Vanilla', 2.50),
@@ -58,16 +49,19 @@ INSERT INTO transactions (
 (1, 4, 1, CURRENT_TIMESTAMP),
 (2, 5, 2, CURRENT_TIMESTAMP);
 
+
 SELECT * FROM flavors;
-SELECT * FROM customers;
-SELECT * FROM transactions;
 
+-- change to ice_cream_reader and select data
 USE ROLE ice_cream_reader;
+SELECT * FROM customers;
+
+-- insufficient pivilege for ice_cream_reader to insert data
+-- turn off Use secondary roles, it's under Account and over database, schema and warehouse.
+INSERT INTO customers (customer_name, email)
+VALUES
+('John Doe', 'john.doe@example.com');
 
 SELECT * FROM transactions;
-
-INSERT INTO customers (customer_name, email)
-VALUES 
-('John Doe2', 'john.doe@example.com');
 
 
