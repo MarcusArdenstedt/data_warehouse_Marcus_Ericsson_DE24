@@ -1,0 +1,12 @@
+
+USE ROLE SYSADMIN;
+
+
+
+CREATE DATABASE IF NOT EXISTS movies_2;
+
+CREATE SCHEMA IF NOT EXISTS movies_2.staging;
+
+DESC DATABASE movies_2;
+
+
