@@ -1,0 +1,13 @@
+
+USE ROLE SYSADMIN;
+
+CREATE WAREHOUSE IF NOT EXISTS marketing_wh
+WITH
+WAREHOUSE_SIZE = "X-SMALL"
+AUTO_SUSPEND = 60
+AUTO_RESUME = TRUE
+INITIALLY_SUSPENDED = TRUE
+COMMENT = "Warehouse for marketing data, is about food comapny";
+
+USE WAREHOUSE marketing_wh;
+
