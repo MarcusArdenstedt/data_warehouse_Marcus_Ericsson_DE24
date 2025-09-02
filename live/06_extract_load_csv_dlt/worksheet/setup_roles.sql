@@ -1,11 +1,4 @@
 
--- switch to an appropriate role to create user and role
-USE ROLE USERADMIN;
-
--- create dlt user
-CREATE USER extract_loader 
-    PASSWORD = 'a1234b5678'
-    DEFAULT_WAREHOUSE = COMPUTE_WH;
 
 -- create dlt role
 
