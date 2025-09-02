@@ -35,3 +35,4 @@ SELECT COUNT(*) FROM person;
 
 SHOW TABLES IN SCHEMA staging;
 
+DESC TABLE staging.person;
