@@ -32,3 +32,5 @@ SHOW GRANTS TO ROLE job_ads_dlt_role_3;
 SHOW GRANTS TO USER extract_loader_3;
 
 
+SELECT current_account(), current_user(), current_role();
+
