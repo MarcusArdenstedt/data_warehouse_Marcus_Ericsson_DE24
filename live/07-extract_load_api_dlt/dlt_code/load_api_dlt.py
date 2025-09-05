@@ -1,5 +1,4 @@
 
-
 import dlt
 import requests
 import json
@@ -71,6 +70,6 @@ if __name__ == "__main__":
     table_name = "job_ads"
 
     # Teknisk inriktning, "Hälso sjukvård", "Pedagogik"
-    occupation_fields = ("E7hm_BLq_fqZ", "GazW_2TU_kJw", "apaJ_2ja_LuF")
+    occupation_fields = ("6Hq3_tKo_V57", "NYW6_mP6_vwf", "MVqp_eS8_kDZ")
 
     run_pipeline(query, table_name, occupation_fields)
