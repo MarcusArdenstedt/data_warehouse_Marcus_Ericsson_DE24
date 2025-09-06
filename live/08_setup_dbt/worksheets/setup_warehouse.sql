@@ -44,3 +44,11 @@ CREATE TABLE test (id INTEGER);
 SHOW TABLES;
 
 DROP TABLE test;
+
+SELECT current_user(), current_role(), current_account();
+
+USE ROLE ORGADMIN;
+
+SHOW ACCOUNTS;
+
+te16147.west-europe.azure
