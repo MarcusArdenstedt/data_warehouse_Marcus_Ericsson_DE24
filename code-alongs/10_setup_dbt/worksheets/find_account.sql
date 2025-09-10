@@ -3,4 +3,3 @@ USE ROLE ORGADMIN;
 
 SHOW ACCOUNTS;
 
-te16147.west-europe.azure

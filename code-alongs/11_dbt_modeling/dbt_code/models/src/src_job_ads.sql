@@ -10,4 +10,4 @@ SELECT
 FROM 
     stg_job_ads 
 ORDER BY 
-    application_deadline ASC;
+    application_deadline ASC
