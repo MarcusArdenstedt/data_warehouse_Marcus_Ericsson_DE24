@@ -5,7 +5,7 @@ setup_user.sql
 
 setup_users.sql
 
-
+setup_user_reporter.sql 
 
 
 # Byte-compiled / optimized / DLL files
